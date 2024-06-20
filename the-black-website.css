@@ -1,0 +1,47 @@
+.openingMessage {
+    text-align: center;
+    margin-top: 300px;
+}
+
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    animation: cosmos 60s infinite ;
+}
+
+@keyframes cosmos {
+    20% {background-color: blue;}
+    40% {background-color: orange}
+    60% {background-color: brown;}
+    80% {background-color: purple;}
+}
+
+.name {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    font-size:50px;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.greeting {
+    display: inline-block;
+}
+/*#js-dot1,
+#js-dot2,
+#js-dot3,
+#js-dot4,
+#js-dot5,
+#js-dot6 {
+    color: white;
+    
+}*/

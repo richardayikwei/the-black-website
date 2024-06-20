@@ -1,0 +1,82 @@
+.openingMessage {
+    text-align: center;
+    margin-top: 300px;
+}
+
+#js-welcomeMessage{
+    display: none;
+}
+
+#js-instructions{
+    display: none;
+}
+
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    animation: cosmos 60s infinite;
+}
+
+@keyframes cosmos {
+    20% {
+        background-color: blue;
+    }
+
+    40% {
+        background-color: orange
+    }
+
+    60% {
+        background-color: brown;
+    }
+
+    80% {
+        background-color: purple;
+    }
+}
+
+.name {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    font-size: 50px;
+}
+
+.greeting {
+    display: inline-block;
+    display: none;
+    font-size: 50px;
+}
+
+.greeting1 {
+    display: inline-block;
+}
+
+.earth {
+    display: none;
+    position: relative;
+    background-image: url(./earth.jpg);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    animation: earthRotate 30s alternate infinite linear;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    background-size: cover;
+}
+
+@keyframes earthRotate {
+    100% {
+        background-position: 100%;
+    }
+}
+
+.time {
+    position: absolute;
+    left: 100px;
+}
