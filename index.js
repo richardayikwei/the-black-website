@@ -8,7 +8,7 @@ $(document).ready(function () {
                 $('#js-dot2').fadeIn(1000, function () {
                     $('#js-dot3').fadeIn(1000, function () {
                         $('#js-welcomeMessage').fadeIn(1000, function () {
-                            $("#js-welcomeMessage").css({'display': 'flex', 'justify-content': 'center'})
+                            $("#js-welcomeMessage").css( 'display', 'flex');
                             $('#js-instructions').fadeIn(1000, function () {
                                  $('#js-instructions').css({
                                    'display': "flex",
