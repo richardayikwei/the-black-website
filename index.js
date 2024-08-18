@@ -8,8 +8,18 @@ $(document).ready(function () {
                 $('#js-dot2').fadeIn(1000, function () {
                     $('#js-dot3').fadeIn(1000, function () {
                         $('#js-welcomeMessage').fadeIn(1000, function () {
+                            $("#js-welcomeMessage").css({'display': 'flex', 'justify-content': 'center'})
                             $('#js-instructions').fadeIn(1000, function () {
-                                $('.earth').fadeIn(1000);
+                                 $('#js-instructions').css({
+                                   'display': "flex",
+                                   "justify-content": "center",
+                                 });
+                                $('.earth').fadeIn(1000, function () {
+                                    $(".earthPosition").css({
+                                      'display': "flex",
+                                      "justify-content": "center",
+                                    });
+                                });
                             });
                         });
                     });
