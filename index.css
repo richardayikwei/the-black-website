@@ -3,16 +3,36 @@
     margin-top: 300px;
 }
 
-#js-welcomeMessage{
-    display: none;
-    justify-content: center;
+.js-welcomeMessage {
+    opacity: 0;
 }
 
+.js-welcomeMessage1 {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn1 1s ease-in 1;
+}
 
-#js-instructions{
-    display: none;
-   
-   
+.js-instructions {
+    opacity: 0;
+}
+
+.js-instructions1 {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn1 1s ease-in 1;
+}
+
+@keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 body {
@@ -60,8 +80,17 @@ body {
     display: inline-block;
 }
 
-.earth {
-    display: none;
+.earthPosition {
+    opacity: 0;
+}
+.earthPosition1 {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn2 5s ease-in 1;
+}
+
+.earth1 {
     position: relative;
     background-image: url(./earth.jpg);
     border-radius: 50%;
@@ -75,8 +104,19 @@ body {
 }
 
 @keyframes earthRotate {
+
     100% {
         background-position: 100%;
+    }
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 

@@ -7,18 +7,28 @@ $(document).ready(function () {
             $('#js-dot1').fadeIn(1000, function () {
                 $('#js-dot2').fadeIn(1000, function () {
                     $('#js-dot3').fadeIn(1000, function () {
-                        $('#js-welcomeMessage').fadeIn(1000, function () {
-                            $("#js-welcomeMessage").css( 'display', 'flex');
-                            $('#js-instructions').fadeIn(1000, function () {
-                                 $('#js-instructions').css({
-                                   'display': "flex",
-                                   "justify-content": "center",
-                                 });
+                        $('.js-welcomeMessage').fadeIn(5000, function () {
+                            
+                            $(".js-welcomeMessage").addClass(
+                              "js-welcomeMessage1"
+                            );
+
+                             $(".js-welcomeMessage").text(
+                               "Welcome to the black website."
+                             );
+
+                            $('.js-instructions').fadeIn(1000, function () {
+
+                                 $('.js-instructions').addClass(
+                                   'js-instructions1'
+                                 )
+                                 $(".js-instructions").text(
+                                   "The elements of this webpage are hidden in the void. Hover to find them."
+                                 );
+                                
                                 $('.earth').fadeIn(1000, function () {
-                                    $(".earthPosition").css({
-                                      'display': "flex",
-                                      "justify-content": "center",
-                                    });
+                                    $(".earth").addClass('earth1');
+                                    $(".earthPosition").addClass('earthPosition1');
                                 });
                             });
                         });
