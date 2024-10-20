@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $('input').keydown(function () {
-        if (event.key === 'Enter') {
+    $('input').keydown(function (e) {
+        if (e.key === 'Enter') {
             $('#js-name').hide();
             $('#js-openingMessage').hide();
             $('#js-greeting').text('Hello ' + $('#js-name').val());
